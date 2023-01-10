@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoCel</title>
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <!-- FONT OSWALD -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https: //fonts.googleapis.com/css2? familia = Oswald: wght @ 200; 300; 400 & display = swap "
+        rel=" stylesheet ">
+
+    <!-- CUSTOM CSS-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <nav class="nav-main">
+
+            <img src="img/infocel.png" alt="Tecno-Info LOGO" class="nav-brand">
+            <ul class="nav-menu" style="margin-left: 200px;">
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="mejores.html">Mejores</a>
+                </li>
+                <li>
+                    <a href="acerca de.html">Objetivos</a>
+                </li>
+            </ul>
+
+
+            <ul class="nav-menu-right">
+                <input type="text" placeholder="buscar" id="searchInput">
+                <button onclick="search()" id="searchButton">Buscar</button>
+                <script>
+                    function search() {
+                        var value = document.getElementById('searchInput').value.toLowerCase()
+
+                        console.log(value)
+                        window.location = "./PagesSearch/" + value + ".html"
+                    }
+                </script>
+
+                <style>
+                    #searchInput {
+                        padding: 10px;
+                        background: #eff2f7;
+                        color: rgb(12, 12, 12);
+                        border-radius: 10px;
+                        border-color: #110000;
+                        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                        font-family: sans-serif;
+                        font-size: medium;
+                    }
+
+                    #searchButton {
+                        padding: 10px;
+                        background: #2565BE;
+                        color: white;
+                        border-radius: 10px;
+                        border-color: #110000;
+                        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                        margin-left: 10px;
+                    }
+
+                    #searchButton:hover {
+                        background: #6088cc;
+                    }
+                </style>
+            </ul>
+        </nav>
+        <hr>
+
+
+        <!-- SHOWCASE -->
+        <header class="showcase">
+            <h2>Ultimas Noticias</h2>
+            <p>Las mejores noticias del mundo de la telefonia movil, noticias diarias y actualizadas.</p>
+            <a href="Inicio.html" class="btn">Leer más <i class="fas fa-angle-double-right"></i></a>
+        </header>
+
+        <!-- NEWS CARDS -->
+        <div class="news-cards">
+            <div>
+                <img src="img/news1.jpg" alt="news 1">
+                <h3>5 teléfonos que tendrán carga de 125W</h3>
+                <p>Hace un año que Oppo dio a conocer su tecnología de carga rápida de 125W, capaz de llenar la batería
+                    de cero a pleno en apenas 20 minutos. Aquello era una demostración pero ahora sabemos algo más
+                    sobre...</p>
+                <a href="carga rapida.html">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="img/news2.jpg" alt="news 1">
+                <h3>Android 12 llegará a todos estos teléfonos de Samsung y así podrás descargarlo.</h3>
+                <p>Los primeros teléfonos de Samsung en recibirla serán los dispositivos de la familia S21, es decir,
+                    los modelos Galaxy S21, Galaxy S21+ y Galaxy S21 Ultra. </p>
+                <a href="Inicio.html"> Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="img/news3.jpg" alt="news 1">
+                <h3>Apple permitirá que usuarios reparen sus teléfonos iPhone.</h3>
+                <p>Apple anunció el miércoles que comenzará a permitir que sus usuarios reparen los dispositivos que le
+                    compran al gigante de Silicon Valley, una concesión considerada como una victoria para los
+                    defensores del “derecho a reparar”.</p>
+                <a href="apple reparacion.html">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="img/news4.jpg" alt="news 1">
+                <h3>Venderá Apple piezas originales para reparar iPhones.</h3>
+                <p>La compañía Apple de Steve Jobs anunció este miércoles que pondrá a la venta piezas y herramientas
+                    originales para que los usuarios de iPhones y Macs puedan reparar los dispositivos tecnológicos por
+                    su propia cuenta. </p>
+                <a href="apple original.html">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+
+        </div>
+
+        <section class="cards-banner-one">
+            <div class="content">
+                <h2>Redmi Note 11, Note 11 Pro y Redmi Note 11 Pro+: la gama media por excelencia de Xiaomi es más
+                    potente y completa que nunca.</h2>
+                <p>La gama con más ventas de Xiaomi se renueva a lo grande con tres nuevos teléfonos: los Redmi Note 11,
+                    Redmi Note 11 Pro y Redmi Note 11 Pro+. Esta nueva familia, que hereda la popularidad de los Redmi
+                    Note 10, eleva el listón de las características renovando a fondo su diseño exterior.</p>
+                <a href="REDMI NOTE 11.html" class="btn">Leer más <i class="fas fa-angle-double-right"></i></a>
+
+
+            </div>
+        </section>
+
+        <!-- NEWS CARDS -->
+        <div class="news-cards">
+            <div>
+                <img src="img/Samsung1.jpg" alt="news 1">
+                <h3>La Generación Z está trayendo de vuelta los teléfonos plegables.</h3>
+                <p>Si eres millennial, probablemente recuerdes teléfonos como el Motorola Razr. Hablamos del antiguo
+                    celular plegable lanzado en noviembre de 2004 que tenía una pequeña pantalla en la tapa y que venía
+                    en varios colores, incluso en una edición fucsia que fue utilizado por Rihanna y Paris Hilton.</p>
+                <a href="La Generación Z.html">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="img/telefono gamer2.jpg" alt="news 1">
+                <h3>El mejor teléfono gaming del 2021: los 10 mejores teléfonos para jugar.</h3>
+                <p>Elegir mejor teléfono gaming es una decisión importante para muchos. Estos móviles normalmente tienen
+                    pantallas excelentes y mucha potencia, y la App Store y Google Play Store tienen una amplia
+                    selección de juegos que va en aumento. </p>
+                <a href="telefono gamer.html">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="img/Xiaomi note 10 3.jpg" alt="news 1">
+                <h3>Xiaomi Redmi Note 10 vs Poco X3: duelo de superventas en la gama media.</h3>
+                <p>Xiaomi se ha convertido en una de las marcas de celulares económicos más exitosas del mercado, y hay
+                    una buena razón para ello: móviles como el Xiaomi Redmi Note 10 y el Poco X3, dos de sus superventas
+                    de la gama media, ofrecen grandes características a precios bastante bajos.!</p>
+                <a href="redmi vs poco f3.html">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+            <div>
+                <img src="img/Black-Shark-4.jpg" alt="news 1">
+                <h3>El teléfono gamer de Xiaomi podrá cargarse en tan solo 15 minutos</h3>
+                <p>La empresa china de celulares gamers Black Shark ha anunciado el 23 de marzo como la fecha de
+                    presentación del Black Shark 4, su nueva serie que contará con el soporte de la carga rápida de
+                    120W.</p>
+                <a href="telefono gamer.html">Leer más <i class="fas fa-angle-double-right"></i></a>
+            </div>
+
+        </div>
+
+        <section class="cards-banner-two">
+            <div class="content">
+                <h2>El 3G será desactivado en 2022 y puede dejar sin señal a los más vulnerables, entre ellos muchos
+                    latinos.</h2>
+                <p>Teléfonos móviles más antiguos, tabletas y otros dispositivos que se conectan a la red de tercera
+                    generación o 3G serán obsoletos en Estados Unidos cuando los proveedores deshabiliten este servicio
+                    en 2022.</p>
+                <a href="señal 2022.html" class="btn">Leer más <i class="fas fa-angle-double-right"></i></a>
+
+            </div>
+        </section>
+
+        <section class="social">
+            <p>Redes sociales</p>
+            <div class="links">
+                <a href="https://www.facebook.com/InfoCel-111052598119170">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/karlanadamas_">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/infocel2022ic/?hl=es-la">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+
+        </section>
+    </div>
+</body>
+
+</html>
